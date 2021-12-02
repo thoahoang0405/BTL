@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/icon/themify-icons-font/themify-icons/themify-icons.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./asset/img/logo3.png" alt="">
+            <h1>flickr</h1>
+        </div>
+        <div class="search">
+            <span class="icon-search">
+                <i class="material-icons">
+                    search
+                    </i>
+            </span>
+            <input type="text " placeholder="Ảnh,con người,hoặc nhóm">
+        </div>
+        <button class="logIn">
+            <p>Đăng Nhập</p>
+        </button>
+        <button class="sign">
+            <a href="file:///C:/xamppp/htdocs/project/formSign.html">Đăng Kí</a>
+        </button>
+
+    </header>
+    <div class="main">
+        <div class="bg-img">
+            <img id="bg-img" onclick="changeImg()" src="./asset/img/bg-img1.jpg" alt="">
+            <div class="item-bg">
+                <h1>Tìm nguồn cảm hứng của bạn.</h1>
+                <h4>Hãy tham gia cộng đồng Flickr, ngôi nhà của hàng chục tỷ bức ảnh và 2 triệu nhóm.</h4>
+                <button  class="btn-start">
+                    <a href="file:///C:/xamppp/htdocs/project/formSign.html" class="text-btn">Bắt đầu miễn phí</a>
+                </button>
+                <div class="name-img">
+                  <a href="https://www.flickr.com/about">Welcome to flickr</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="item-footer">
+            <a href="https://www.flickr.com/about">Giới thiệu</a>
+        </div>
+        <div class="item-footer">
+            <a href="https://www.flickr.com/jobs">Việc làm</a>
+        </div>
+        
+        <div class="item-footer">
+            <a href="https://blog.flickr.net/en">Blog</a>
+        </div>
+        <div class="item-footer">
+            <a href="https://www.flickr.com/services/developer">Nhà phát triển</a>
+        </div>
+        <div class="item-footer">
+            <a href="https://www.flickr.com/help/guidelines">Quy tắc</a>
+        </div>
+        <div class="item-footer">
+            <a href="https://www.flickrhelp.com/hc/en-us">Trợ giúp</a>
+        </div>
+        <div class="item-footer">
+            <a href="https://www.flickr.com/help/forum/vn-vn/">Diễn đàn trợ giúp</a>
+        </div>
+        <div class="item-footer">
+            <a href="https://www.flickr.com/help/privacy">Sự riêng tư</a>
+        </div>
+        <div class="item-footer">
+            <a href="https://www.flickr.com/help/terms">Điều khoản</a>
+        </div>
+        <div class="item-footer">
+            <a href="https://www.flickr.com/help/cookies">Cookie</a>
+        </div>
+        
+        <div class="item-footer">
+            <a href="">Tiếng việt</a>
+        </div>
+        <div class="icon-footer">
+            <i class="ti-facebook"></i>
+            <i class="ti-twitter-alt"></i>
+            <i class="ti-instagram"></i>
+        </div>
+        
+    </div>
+
+
+
+ <script>
+    var index=0;
+    changeImg =function(){
+        var arrayImg= new Array(
+             './asset/img/bg-img4.jpg',
+             ' ./asset/img/bg-img3.jpg',
+             './asset/img/bg-img2.jpg',
+             './asset/img/bg-img5.jpg',
+             ' ./asset/img/bg-img6.jpg',
+             './asset/img/bg-img7.jpg',
+             './asset/img/bg-img8.jpg'
+
+            
+        );
+         document.getElementById('bg-img').src= arrayImg[index];
+         index++;
+         if(index == 6){
+             index =1;
+         }
+         
+     }
+    setInterval(changeImg, 5000);
+ </script>
+
+</body>
+</html>
